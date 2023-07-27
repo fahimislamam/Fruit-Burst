@@ -32,7 +32,7 @@
         }
 
         .sec-des {
-            color:rgba(18, 18, 18, 0.60);
+            color: rgba(18, 18, 18, 0.60);
         }
 
         /* Banner Image */
@@ -41,6 +41,7 @@
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;
+            border-radius: 8px;
         }
 
         .banner-image-2 {
@@ -48,6 +49,7 @@
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;
+            border-radius: 8px;
         }
 
         .banner-image-3 {
@@ -55,6 +57,7 @@
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;
+            border-radius: 8px;
         }
 
         .banner-image-4 {
@@ -62,12 +65,16 @@
             background-position: center;
             background-repeat: no-repeat;
             object-fit: cover;
+            border-radius: 8px;
         }
+
         /* Meet the Team Image */
-        .team-image{
-            background:url(image/team.png);
+        .team-image {
+            background: url(image/team.png);
             background-position: center;
             background-repeat: no-repeat;
+            object-fit: cover;
+            border-radius: 8px;
 
         }
     </style>
@@ -110,8 +117,8 @@
                     <h2 class="text-2xl lg:text-3xl font-bold">Fruit Burst</h2>
 
                 </div>
-                <div class="navbar-end hidden lg:flex md:flex ">
-                    <input class=" rounded-2xl mr-3 p-1" placeholder=" Search here" type="text" name="" id="">
+                <div class="navbar-end hidden  lg:flex md:flex ">
+                    <input class=" border-0 rounded-2xl mr-3 p-1" placeholder=" Search here" type="text" name="" id="">
                 </div>
             </div>
         </nav>
@@ -189,6 +196,32 @@
                 </div>
             </div>
         </div>
+
+        <section class=" mx-24 px-10 py-8 bg-white shadow-md shadow-slate-50 relative bottom-24">
+            <div class="flex">
+          
+            <div class="items-center mr-8">
+              <img src="image/fruit1.png" alt="">
+              <p class="font-medium text-base pl-5">Grape</p>
+            </div>
+            <div class="items-center mr-8">
+              <img src="image/fruit2.png" alt="">
+              <p class="font-medium text-base pl-5">Orange</p>
+            </div>
+            <div class="items-center mr-8">
+              <img src="image/fruit3.png" alt="">
+              <p class="font-medium text-base pl-8">Mango</p>
+            </div>
+            <div class="items-center mr-8">
+              <img src="image/fruit4.png" alt="">
+              <p class="font-medium text-base pl-5">Strawberry</p>
+            </div>
+            <div class="items-center">
+              <img src="image/fruit5.png" alt="">
+              <p class="font-medium text-base pl-5">pomegranate</p>
+            </div>
+          </div>
+          </section>
     </header>
     <!-- Main Section -->
     <main class="container lg:max-w-[1170px] mx-auto">
@@ -197,7 +230,8 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 my-6">
                 <div class="">
                     <h2 class="text-5xl h-title font-bold mb-3">Deal of the day</h2>
-                    <p class="text-base sec-des lg:mr-7">Contrary to popular belief, is not simply random text. It has roots in
+                    <p class="text-base sec-des lg:mr-7">Contrary to popular belief, is not simply random text. It has
+                        roots in
                         a piece
                         of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
@@ -278,8 +312,8 @@
                         <div class="rating justify-center">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"/>
-                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked/>
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" checked />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                         </div>
                         <div class=" text-center">
@@ -308,66 +342,82 @@
             </div>
             <!-- Button -->
             <div class="text-center my-6">
-                <button class="primary-color text-white text-base md:text-xl rounded-lg font-bold mt-5 md:px-7 md:py-4 py-3 px-5">Shop All</button>
+                <button
+                    class="primary-color text-white text-base md:text-xl rounded-lg font-bold mt-5 md:px-7 md:py-4 py-3 px-5">Shop
+                    All</button>
             </div>
 
         </section>
         <!-- Meet The Team Section -->
         <section class="my-20">
-            <div class="team-image ">
-                <div class="mx-28 text-center">
-                    <h2 class="mb-5 text-5xl font-bold text-white">Meet the team section</h2>
-                    <p class=" mb-5 lg:mx-40 text-base font-medium text-white">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-                </div>
-                <!-- Team Member Id -->
-                <div class="py-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                    <!-- Member 1 -->
-                    <div>
-                        <img src="image/member1.png" alt="">
-                        <h3 class="text-2xl font-semibold text-white">Awlad Hossain</h3>
-                        <p class="text-base font-medium text-white">Fruits Expert</p>
-                        <!-- Social Media Links-->
-                        <div class="flex items-center gap-2">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <div class="hero min-h-screen" style="background-image: url(image/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="max-w-3xl">
+                        <h1 class="mb-5 text-5xl font-bold text-white">Meet the team</h1>
+                        <p class="mb-5 text-white text-base font-normal">Contrary to popular belief, is not simply
+                            random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making
+                            it over 2000 years old.</p>
+                            <!-- Team Member  -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 ">
+                            <!-- Member ID 1 -->
+                            <div class="w-48 items-center justify-center text-center mr-6">
+                                <img class="mb-8 pl-6" src="image/member1.png" alt="">
+                                <div class="justify-center">
+                                    <h2 class="font-semibold text-xl mb-3">Ratul Hossain</h2>
+                                    <p class="font-medium text-base mb-3">Fruits Expert</p>
+                                    <!-- Social Media Link -->
+                                    <div class="flex gap-3 justify-center">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Member ID 2 -->
+                            <div class="w-48 items-center justify-center text-center mr-6">
+                                <img class="mb-8 pl-6" src="image/member2.png" alt="">
+                                <div class="justify-center">
+                                    <h2 class="font-semibold text-xl mb-3">Sadia Chowdhury</h2>
+                                    <p class="font-medium text-base mb-3">Fruits Expert</p>
+                                    <!-- Social Media Link -->
+                                    <div class="flex gap-3 justify-center">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Member ID 3 -->
+                            <div class="w-48 items-center justify-center text-center mr-6">
+                                <img class="mb-8 pl-6" src="image/member3.png" alt="">
+                                <div class="justify-center">
+                                    <h2 class="font-semibold text-xl mb-3">Aynal Hossain</h2>
+                                    <p class="font-medium text-base mb-3">Fruits Expert</p>
+                                    <!-- Social Media Link -->
+                                    <div class="flex gap-3 justify-center">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Member ID 4 -->
+                            <div class="w-48 items-center justify-center text-center">
+                                <img class="mb-8 pl-6" src="image/member4.png" alt="">
+                                <div class="justify-center">
+                                    <h2 class="font-semibold text-xl mb-3">Najin</h2>
+                                    <p class="font-medium text-base mb-3">Fruits Expert</p>
+                                    <!-- Social Media Link -->
+                                    <div class="flex gap-3 justify-center">
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Member 2 -->
-                    <div>
-                        <img src="image/member2.png" alt="">
-                        <h3 class="text-2xl font-semibold text-white">Awlad Hossain</h3>
-                        <p class="text-base font-medium text-white">Fruits Expert</p>
-                        <!-- Social Media Links-->
-                        <div class="flex items-center gap-2">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        </div>
-                    </div>
-                    <!-- Member 3 -->
-                    <div>
-                        <img src="image/member3.png" alt="">
-                        <h3 class="text-2xl font-semibold text-white">Awlad Hossain</h3>
-                        <p class="text-base font-medium text-white">Fruits Expert</p>
-                        <!-- Social Media Links-->
-                        <div class="flex items-center gap-2">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        </div>
-                    </div>
-                    <!-- Member 4 -->
-                    <div>
-                        <img src="image/member4.png" alt="">
-                        <h3 class="text-2xl font-semibold text-white">Awlad Hossain</h3>
-                        <p class="text-base font-medium text-white">Fruits Expert</p>
-                        <!-- Social Media Links-->
-                        <div class="flex items-center gap-2">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -380,25 +430,25 @@
             <h2 class="text-3xl text-white">Fruit Burst</h2>
         </div>
         <div class="grid text-xs md:text-sm lg:text-base text-white grid-flow-col gap-3 md:gap-5 lg:gap-6">
-          <a class="link link-hover">Home</a> 
-          <a class="link link-hover">About Us</a> 
-          <a class="link link-hover">Shop</a> 
-          <a class="link link-hover">All Fruits</a>
-          <a class="link link-hover">Support</a> 
-          <a class="link link-hover">My Account</a>
-        </div> 
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">About Us</a>
+            <a class="link link-hover">Shop</a>
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </div>
         <div>
-          <div class="text-white text-2xl grid grid-flow-col gap-4">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-telegram"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-       
-          </div>
-        </div> 
-      </footer>
+            <div class="text-white text-2xl grid grid-flow-col gap-4">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </footer>
 
 </body>
 
